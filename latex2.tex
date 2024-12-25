@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}  % Class definition for the document type
+
+%------------------ Preamble ------------------
+\usepackage[utf8]{inputenc}  % Encoding
+\usepackage{amsmath, amssymb}  % Math symbols and formatting
+\usepackage{graphicx}  % Including images
+\usepackage{geometry}  % Adjust page dimensions
+\usepackage{hyperref}  % For creating hyperlinks
+\usepackage{fancyhdr}  % Fancy header and footer
+\usepackage{lipsum}  % For generating placeholder text
+\usepackage{titlesec}  % Customize title sections
+\usepackage{setspace}  % Control line spacing
+\usepackage{longtable}  % For tables that span multiple pages
+
+% Page layout settings
+\geometry{top=1in, bottom=1in, left=1in, right=1in}  % Page margins
+\setlength{\parskip}{1em}  % Space between paragraphs
+\setlength{\parindent}{0pt}  % No paragraph indentation
+\doublespacing  % Double spacing for the document
+
+% Define header and footer (optional)
+\pagestyle{fancy}
+\fancyhf{}  % Clear all header and footer fields
+\fancyhead[L]{Your Name}  % Left header
+\fancyhead[C]{Project Title}  % Center header
+\fancyhead[R]{Date}  % Right header
+\fancyfoot[C]{\thepage}  % Page number at the center of the footer
+
+% Title setup
+\title{Your Document Title}
+\author{Your Name}
+\date{\today}  % Date of document compilation
+
+%------------------ Begin Document ------------------
+
+\begin{document}
+
+% Title page
+\maketitle
+\newpage
+
+% Abstract (optional)
+\begin{abstract}
+    This is the abstract of the document. It should be a brief summary of your work.
+\end{abstract}
+\newpage
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+%------------------ Sections ------------------
+
+\section{Introduction}
+\lipsum[1-3]  % Placeholder text, replace with your own content
+
+\section{Related Work}
+\lipsum[4-6]
+
+\section{Methodology}
+\lipsum[7-9]
+
+\section{Results}
+\lipsum[10-12]
+
+\section{Conclusion}
+\lipsum[13]
+
+%------------------ References ------------------
+
+\newpage
+\begin{thebibliography}{9}
+    \bibitem{example1}
+    Author1, Author2, \textit{Title of the Paper}, Journal Name, Volume(Issue), Year.
+
+    \bibitem{example2}
+    Author1, \textit{Title of the Book}, Publisher, Year.
+
+    % Add more references here
+\end{thebibliography}
+
+\end{document}
